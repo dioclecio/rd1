@@ -299,6 +299,12 @@ Error message and password prompt
 
 <li>As viewports</li>
 
+<li>Cadeira tubular: contornando os cantos</li>
+
+<li>Cadeira tubular: montagem da base da cadeira</li>
+
+<li>Cadeira tubular: Montagem incial</li>
+
 <li>Chave de fenda: formando as cavidades</li>
 
 <li>Chave de Fenda: Início</li>
@@ -18524,8 +18530,8 @@ very-muted-foreground: #888888</pre>
 <div created="20210301145713551" creator="Dioclecio" modified="20210301151220052" modifier="Dioclecio" title="$:/state/tab--86143343">
 <pre>$:/core/ui/ControlPanel/Plugins/Installed/Plugins</pre>
 </div>
-<div created="20210301145557448" creator="Dioclecio" modified="20210301194418246" modifier="Dioclecio" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20210301145557448" creator="Dioclecio" modified="20210304210616410" modifier="Dioclecio" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Plugins</pre>
 </div>
 <div created="20210301215139494" creator="Dioclecio" modified="20210301215139494" modifier="Dioclecio" title="$:/state/tab-1950188856">
 <pre>$:/core/ui/TiddlerInfo/References</pre>
@@ -18542,7 +18548,7 @@ very-muted-foreground: #888888</pre>
 <div created="20170814225042824" creator="D" modified="20170814225043566" modifier="Diocleci" title="$:/status/UserName">
 <pre>Dioclecio</pre>
 </div>
-<div created="20210301214509598" creator="Dioclecio" list="[[Chave de Fenda: Revolução]] [[Cortar as pontas da Chave de Fenda]] [[Cortando as pontas da Chave de Fenda]] [[Cortando o cabo da chave de fenda]] [[Chave de Fenda: Montagem do Cabo]] [[Chave de fenda: formando as cavidades]] [[Definir o perfil da chave de fenda]] [[Curvas para o perfil da chave]] Início [[Programa da disciplina]] [[Montagem de uma peça de revolução e com detalhes]] [[Montagem de uma garrafa]] [[Garrafa - Abertura dos desenhos básicos]]" modified="20210301215530212" modifier="Dioclecio" title="$:/StoryList">
+<div created="20210304204316116" creator="Dioclecio" list="$:/ControlPanel Início [[Programa da disciplina]] [[Montagem de cadeira tubular]] [[Cadeira tubular: Montagem incial]] [[Cadeira tubular: montagem da base da cadeira]] [[Cadeira tubular: contornando os cantos]]" modified="20210304210612179" modifier="Dioclecio" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20170814235807856" creator="Dioclecio" modified="20170814235809162" modifier="Dioclecio" title="$:/theme">
@@ -18919,6 +18925,75 @@ Resultado esperado.
 
 [[Trabalho com coordenadas]]
 </pre>
+</div>
+<div created="20210304210832862" creator="Dioclecio" modified="20210305105501580" modifier="Dioclecio" title="Cadeira tubular: contornando os cantos">
+<pre>Devemos aplicar o comando Fillet nos cantos indicados, adotando os tamanhos apontados na cadeira.
+
+[img[img/ksnip_20210304-180938.png]]
+
+Cantos indicados:
+
+[img[img/ksnip_20210304-180824.png]]
+
+Resultado:
+
+[img[img/ksnip_20210304-181013.png]]
+
+</pre>
+</div>
+<div created="20210304205423679" creator="Dioclecio" modified="20210304210527411" modifier="Dioclecio" title="Cadeira tubular: montagem da base da cadeira">
+<pre>À partir da vista Right, devemos construir com Polyline as seguintes coordenadas.
+
+* 0,0
+* @44,0
+* @0,43
+* @-39,0
+* r42&lt;100
+
+Resultado:
+
+[img[img/ksnip_20210304-175849.png]]
+
+À partir da vista de Topo, devemos construir a seguinte linha:
+
+* Origem: 0,0
+* @45,0
+
+[img[img/ksnip_20210304-180056.png]]
+
+Habilite o Osnap e define como padrão os itens:
+
+* End
+* Mid 
+* Center
+
+[img[img/ksnip_20210304-180349.png]]
+
+Agora devemos copiar a estrutura lateral montada para a outra extremidade dessa linha recem criada, conforme indica a imagem abaixo.
+
+[img[img/ksnip_20210304-180226.png]]
+
+
+Em seguida, devemos fechar o topo da cadeira com uma linha, conforme indica a imagem.
+
+[img[img/ksnip_20210304-180505.png]]
+
+[[Cadeira tubular: contornando os cantos]]</pre>
+</div>
+<div created="20210304205142585" creator="Dioclecio" modified="20210304205355177" modifier="Dioclecio" title="Cadeira tubular: Montagem incial">
+<pre>Nessa aula iremos iniciar um novo documento utilizando o modelo ''Large Object - Centimeters''.
+
+[img[img/AulaCadeiraTubular-001.png]]
+
+Em seguida, iremos renomear as três primeiras camadas para as seguintes identificações:
+
+* Linhas de construção
+* Linhas tubulares 
+* E Assento
+
+[img[img/ksnip_20210304-175240.png]]
+
+[[Cadeira tubular: montagem da base da cadeira]]</pre>
 </div>
 <div created="20210301213923744" creator="Dioclecio" modified="20210301215338811" modifier="Dioclecio" title="Chave de fenda: formando as cavidades">
 <pre>Selecione o comando ''Boolean Difference''. 
@@ -19682,8 +19757,14 @@ Depois volte ao controle de camadas e trave o ''Layer 05''.
 
 [[Desenhando as dimensões da garrafa]]</pre>
 </div>
-<div created="20170914233641563" creator="Dioclecio" modified="20170914233646427" modifier="Dioclecio" title="Montagem de cadeira tubular">
-<pre>!!Video de referência
+<div created="20170914233641563" creator="Dioclecio" modified="20210304204904475" modifier="Dioclecio" title="Montagem de cadeira tubular">
+<pre>!!Índice
+
+Nessa aula iremos realizar a montagem de uma cadeira tubular que implicará em aprender conceitos sobre o Pipe e o Sweep 2 Rails. 
+
+* [[Cadeira tubular: Montagem incial]]
+
+!!Video de referência
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/lisdRkehUXc?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;</pre>
 </div>
 <div created="20170914233757770" creator="Dioclecio" modified="20170919181606186" modifier="Dioclecio" title="Montagem de peça à partir de extrusão">
