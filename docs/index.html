@@ -383,13 +383,23 @@ Error message and password prompt
 
 <li>Garrafa - Abertura dos desenhos básicos</li>
 
+<li>Garrafa: Ajustes na linha central</li>
+
+<li>Garrafa: Corte das superfícies</li>
+
 <li>Garrafa: Criando o fundo do objeto</li>
 
 <li>Garrafa: Definindo a base do objeto</li>
 
+<li>Garrafa: Definindo pequenos detalhes nas superfícies</li>
+
 <li>Garrafa: Definindo transparência para o plano de apoio</li>
 
+<li>Garrafa: Montagem das linhas para corte do objeto</li>
+
 <li>Garrafa: Montando o topo da garrafa</li>
+
+<li>Garraga: Montagem da revolução necessária</li>
 
 <li>Início</li>
 
@@ -18546,8 +18556,8 @@ very-muted-foreground: #888888</pre>
 <div created="20210301215139494" creator="Dioclecio" modified="20210301215139494" modifier="Dioclecio" title="$:/state/tab-1950188856">
 <pre>$:/core/ui/TiddlerInfo/References</pre>
 </div>
-<div created="20210301150329137" creator="Dioclecio" modified="20210308002143807" modifier="Dioclecio" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20210301150329137" creator="Dioclecio" modified="20210316005421954" modifier="Dioclecio" title="$:/state/tab/sidebar--595412856">
+<pre>TableOfContents</pre>
 </div>
 <div created="20210301194422692" creator="Dioclecio" modified="20210301194431685" modifier="Dioclecio" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/ViewToolbar</pre>
@@ -18558,7 +18568,7 @@ very-muted-foreground: #888888</pre>
 <div created="20170814225042824" creator="D" modified="20170814225043566" modifier="Diocleci" title="$:/status/UserName">
 <pre>Dioclecio</pre>
 </div>
-<div created="20210308002144965" creator="Dioclecio" list="[[Garrafa: Criando o fundo do objeto]] [[Garrafa: Montando o topo da garrafa]] Início" modified="20210308012643881" modifier="Dioclecio" title="$:/StoryList">
+<div created="20210315210929517" creator="Dioclecio" list="[[2017.09.20 - Aviso enviado via Telegram]] [[2017.12.05 - Edital de Avaliação Final]] [[2017.12.05 - Lançamento das notas no sistema]] [[Instruções sobre como explorar o site]] [[Apresentação da disciplina - 2017]] [[2017.09.27 - 1a Avaliação]] [[Garrafa: Criando o fundo do objeto]] [[Garrafa: Montando o topo da garrafa]] [[Garraga: Montagem da revolução necessária]] [[Garrafa: Montagem das linhas para corte do objeto]] [[Garrafa: Ajustes na linha central]] [[Garrafa: Corte das superfícies]] [[Garrafa: Definindo pequenos detalhes nas superfícies]] Início [[Programa da disciplina]] [[Montagem de uma garrafa]]" modified="20210316005349391" modifier="Dioclecio" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20170814235807856" creator="Dioclecio" modified="20170814235809162" modifier="Dioclecio" title="$:/theme">
@@ -19689,8 +19699,74 @@ E o próximo ponto será @4,7.25
 
 [[Colocando a imagem da garrafa como referência]]</pre>
 </div>
-<div created="20210307231540808" creator="Dioclecio" modified="20210308012632881" modifier="Dioclecio" title="Garrafa: Criando o fundo do objeto">
-<pre>Ative a função ''Guimbal'' e mova a base para cima utilizando a distância 0.25, conforme indica a figura.
+<div created="20210315235835763" creator="Dioclecio" modified="20210315235854335" modifier="Dioclecio" title="Garrafa: Ajustes na linha central">
+<pre>Devemos prestar atenção à curvatura que deve apresentar a garrafa.
+
+[img[img/ksnip_20210315-194943.png]]
+
+Vamos selecionar a linha central que acabou de ser movimentada. E vamos aplicar o comando ''Rebuild Curve''.
+
+[img[img/ksnip_20210315-195129.png]]
+
+Defina as propriedades conforme indica a imagem abaixo. Em seguida, pressione OK.
+
+[img[img/ksnip_20210315-195325.png]]
+
+Com a mesma linha selecionada, habilite os pontos de controle, conforme indica a imagem abaixo.
+
+[img[img/ksnip_20210315-195442.png]]
+
+Os pontos de controle aparecem, na imagem.
+
+[img[img/ksnip_20210315-195729.png]]
+
+Desabilite a opção ''Grid Snap'' e mova os pontos indicados para a posição apresentada.
+
+[img[img/ksnip_20210315-195950.png]]
+
+Selecione as três linhas construídas e vamos acionar o comando ''Surface / Loft''. 
+
+[img[img/ksnip_20210315-200038.png]]
+
+Ao aparecer a janela, pressione Ok. 
+
+[img[img/ksnip_20210315-205614.png]]
+
+Resultado:
+
+[img[img/ksnip_20210315-205731.png]]
+
+[[Garrafa: Corte das superfícies]]</pre>
+</div>
+<div created="20210316000004153" creator="Dioclecio" modified="20210316004424751" modifier="Dioclecio" title="Garrafa: Corte das superfícies">
+<pre>Faça um ''Mirror'' (espelhamento) da superfície que criamos utilizando o eixo indicado em verde na imagem.
+
+[img[img/ksnip_20210315-205955.png]]
+
+Resultado:
+
+[img[img/ksnip_20210315-210105.png]]
+
+Podemos fazer testes utilizando o comando ''Boolean Difference'' para realizar os cortes das superfícies na parte frontal e anterior da garrafa. 
+
+Mas no presente exercício iremos trabalhar com o comando ''Trim''.
+
+Nesse caso, iremos selecionar as superfícies indicadas pela imagem.
+
+[img[img/ksnip_20210315-210815.png]]
+
+Selecione o comando ''Trim''. Em seguida, escolha as partes que devem ser cortadas, conforme indica a figura abaixo:
+
+[img[img/ksnip_20210315-213659.png]]
+
+Aplique o comando ''Join'' nas superfícies criadas. 
+
+Transfira o objeto criado para a camada ''Garrafa''.
+
+[[Garrafa: Definindo pequenos detalhes nas superfícies]]</pre>
+</div>
+<div created="20210307231540808" creator="Dioclecio" modified="20210316005402930" modifier="Dioclecio" title="Garrafa: Criando o fundo do objeto">
+<pre>Ative a função ''Gimbal'' e mova a base para cima utilizando a distância 0.25, conforme indica a figura.
 
 [img[img/ksnip_20210307-201634.png]]
 
@@ -19743,6 +19819,19 @@ Agora vamos esconder os retângulos indicados utilizando o comando ''Edit / Hide
 
 [[Garrafa: Criando o fundo do objeto]]</pre>
 </div>
+<div created="20210316004524705" creator="Dioclecio" modified="20210316005043748" modifier="Dioclecio" title="Garrafa: Definindo pequenos detalhes nas superfícies">
+<pre>Defina o comando ''Fillet'' com tamanho 0.02 para as superfícies indicadas abaixo (1 e 2).
+
+[img[img/ksnip_20210315-214516.png]]
+
+[img[img/ksnip_20210315-214625.png]]
+
+Resultado
+
+[img[img/ksnip_20210315-214933.png]]
+
+Fim do exercício. Vamos retornar para o [[programa da nossa disciplina|Programa da disciplina]].</pre>
+</div>
 <div created="20210306161101870" creator="Dioclecio" modified="20210306161555052" modifier="Dioclecio" title="Garrafa: Definindo transparência para o plano de apoio">
 <pre>Vamos selecionar o plano que foi importado como imagem, conforme indica a imagem.
 
@@ -19762,10 +19851,92 @@ O Resultado
 
 [[Garrafa: Definindo a base do objeto]]</pre>
 </div>
-<div created="20210308012652527" creator="Dioclecio" modified="20210308013357202" modifier="Dioclecio" title="Garrafa: Montando o topo da garrafa">
+<div created="20210315221445707" creator="Dioclecio" modified="20210315235828925" modifier="Dioclecio" title="Garrafa: Montagem das linhas para corte do objeto">
+<pre>Vamos prestar a atenção nas distâncias necessárias para fazer os cortes da garrafa. O ponto 1 indica a distância extrema da parte frontal e anterior da garrada. E o ponto 2 indica a espessura que deverá ficar os cantos da garrafa.
+
+[img[img/ksnip_20210315-191437.png]]
+
+Com a camada ''Garrafa'' escondida, vamos construir as linhas necessárias para montar essas espessuras. 
+
+Na vista Fronta, crie as seguintes linhas. Procure definir o eixo central da embalagem e depois as figuras laterais.
+
+[img[img/ksnip_20210315-192106.png]]
+
+Utilize o ''Gumbal'' para mover a linha para o quadrante indicado na imagem. 
+
+[img[img/ksnip_20210315-192353.png]]
+
+Selecione as linhas laterais, indicadas na imagem e mova na distância ''-0.375''. Em seguida, desabilite a função ''Gumbal''.
+
+[img[img/ksnip_20210315-192636.png]]
+
+[[Garrafa: Ajustes na linha central]]</pre>
+</div>
+<div created="20210308012652527" creator="Dioclecio" modified="20210315215650536" modifier="Dioclecio" title="Garrafa: Montando o topo da garrafa">
 <pre>Modifique a camada para ''Linhas de Construção''.
 
-Parei no minuto 58:00</pre>
+Vamos fazer uma ''Polyline'' do ponto:
+
+* ''0,0''
+* a 0.11,00
+* e outro para 0.140,0
+
+Em seguida, vamos um arco com:
+
+* centro no ponto ''0.11,0'',
+* início no ponto ''0.14,0''
+* e final em 90 graus para cima, conforme mostra a imagem.
+
+[img[img/ksnip_20210315-182234.png]]
+
+Do final do arco, vamos criar um ''Polyline'' com os seguintes pontos:
+
+* @0,0.375
+* @-0.11,0
+* Fechar o segmento no início dessa construção, conforme indica a imagem.
+
+[img[img/ksnip_20210315-184920.png]]
+
+Após montar os segmento, unir essa construção com o comando ''Join''.
+
+Mover a construção, considerando o meio do segmento inferior, e posicioná-lo no topo da garrafa. A figura abaixo indica a posição. 
+
+[img[img/ksnip_20210315-185153.png]]
+
+Para auxiliar a indicação do topo da garrafa, ative a opção de ''Snap'' para Quadrante.
+
+[img[img/ksnip_20210315-185308.png]]
+
+Isso ajudará a posicionar o objeto conforme indica a imagem.
+
+[img[img/ksnip_20210315-185527.png]]
+
+[[Garraga: Montagem da revolução necessária]]</pre>
+</div>
+<div created="20210315220537921" creator="Dioclecio" modified="20210315222840267" modifier="Dioclecio" title="Garraga: Montagem da revolução necessária">
+<pre>No Snap deixar marcadas somente as opções:
+
+* Mid 
+* End
+* e Cen
+
+Em seguida, fazer um ''Revolve'' considerando o centro do círculo e, em seguida, formar o eixo, confome indica a imagem.
+
+[img[img/ksnip_20210315-190708.png]]
+
+Selecione a opção ''FullCircle'' para formar uma revolução completa. 
+
+Resultado:
+
+[img[img/ksnip_20210315-190834.png]]
+
+Transfira o objeto para a camada ''Garrafa'' e habilite a visualização dessa camada. 
+
+[img[img/ksnip_20210315-191104.png]]
+
+Veja o resultado. Em seguida volte a esconder a camada.
+
+[[Garrafa: Montagem das linhas para corte do objeto]]</pre>
 </div>
 <div created="20170814192727980" creator="Dioclecio" modified="20210301144530963" modifier="Dioclecio" title="Início">
 <pre>[img[img/testeira.png]]
